@@ -70,6 +70,3 @@ Each folder represents a page in the app.
 3. PlaceOrder (`PlaceOrder/`) → Checkout page for placing an order.
 
 Each page has a `.jsx` file (React component) and a `.css` file for styling.
-
-
-Let me know if you need more details! 🚀
