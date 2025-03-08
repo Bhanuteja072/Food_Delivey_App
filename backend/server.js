@@ -46,7 +46,3 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log(`server is running on port  http://localhost:${port}`);
 })
-
-
-
-//mongodb+srv://bhanutejapusarla:142536@cluster0.qgyqe.mongodb.net/?
