@@ -1,72 +1,90 @@
-# Food_Delivey_App
-A React-based food ordering application with a seamless shopping cart experience, allowing users to browse food items, add them to the cart, and manage their orders efficiently.
-Your repository `bhanuteja072-food_delivey_app` appears to be a frontend project built using **React** and **Vite**, likely for a **food delivery application**. Here’s a breakdown of its structure:
+Food Delivery App
 
----
+This is a full-stack food delivery application built with React, Node.js, Express, and MongoDB.
 
-🗂 Root Directory (`bhanuteja072-food_delivey_app/`)
-This is the main folder of your project, containing all necessary files and subdirectories.
+Features
+- User authentication (login/register)
+- Browse food items and categories
+- Add items to the cart
+- Place orders
+- Admin panel for managing orders and food items
+- Responsive design for mobile and desktop
 
-- README.md → A documentation file explaining the project, how to set it up, and how to use it.
-- frontend/ → This contains all the frontend source code for the application.
+Project Structure
+├── admin/         # Admin dashboard for managing the app
+├── backend/       # Backend server (Node.js, Express, MongoDB)
+├── frontend/      # User-facing frontend (React, Vite)
+Admin Panel
+- Built with React and Vite
+- Manages food items, orders, and users
+
+Backend
+- Built with Node.js, Express, and MongoDB
+- Implements authentication and order management
+- API routes for users, orders, food items, and cart
+
+ Frontend
+- Built with React and Vite
+- User authentication and order placement
+- Cart functionality and real-time updates
+
+Installation
+
+  Preequisites
+    -Make sure you have Node.js and MongoDB installed on your system.
+
+Clone the repository
+git clone https://github.com/your-username/bhanuteja072-food_delivery_app.git
+cd bhanuteja072-food_delivery_app
 
 
+Install dependencies
+Backend
 
-📂 Frontend Directory (`frontend/`)
-This is the main working directory for your React application.
+-cd backend
+-npm install
 
-- README.md`** → A separate README file, probably with frontend-specific documentation.
-- `.gitignore`** → Specifies files and folders to ignore in Git (e.g., `node_modules`).
-- `eslint.config.js`** → Configuration file for ESLint, used for maintaining code quality.
-- `vite.config.js`** → Configuration file for Vite, a fast frontend build tool.
-- `package.json`** → Contains metadata, dependencies, and scripts for running the app.
-- `package-lock.json`** → Locks the exact dependency versions to ensure consistency.
 
----
+Frontend
 
-📂 Public Directory (`public/`)
-- `header1_img` → Likely an image asset used in the header.
+-cd ../frontend
+-npm install
 
-This folder typically contains static assets that Vite serves directly, like images, icons, and `index.html`.
+Admin Panel
+-cd ../admin
+npm install
 
----
 
-📂 Source Code (`src/`)
-This folder contains the main React application code.
+Running the Application
+-Start Backend Server
+--cd backend
+--npm run server
 
- 📜 **Global Files
-- `App.css` → Global CSS styles.
-- `App.jsx` → Main entry point of the app, defining the layout and routes.
-- `index.css` → Global styles applied across the app.
-- `main.jsx` → The root file where the React app is mounted.
+Start Frontend
+-cd frontend
+-npm run dev
 
-📂 Context Management (`src/Context/`)
-`StoreContext.jsx` → Likely a React Context for managing global state (e.g., user authentication, cart data, etc.).
+Start Admin Panel
+-cd admin
+-npm run dev
 
- 📂 Assets (`src/assets/`)
-- `assets.js` → May contain imported images, icons, or other static assets used throughout the app.
 
- 📂 Components (`src/components/`)
-Reusable UI components grouped by feature:
+Environment Variables
+Create a `.env` file in the `backend/` folder and configure the following:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+STRIPE_SECRET_KEY
+PORT=5000
 
-1. AppDownload (`AppDownload/`) → Manages the "Download App" section.
-2. ExploreMenu (`ExploreMenu/`) → Displays available food categories or items.
-3. FoodDisplay (`FoodDisplay/`) → Shows the list of available food items.
-4. FoodItem (`FoodItem/`) → Represents a single food item with details like name, price, and image.
-5. Footer (`Footer/`)→ The website’s footer.
-6. Header (`Header/`) → The main website header.
-7. LoginPopup (`LoginPopup/`) → A login modal popup.
-8. Navbar (`Navbar/`) → The navigation bar.
+API Endpoints
+| Endpoint          | Method | Description              |
+|------------------|--------|--------------------------|
+| `/api/users`      | GET    | Get all users            |
+| `/api/foods`      | GET    | Get all food items       |
+| `/api/cart`       | POST   | Add to cart              |
+| `/api/orders`     | POST   | Place an order           |
 
-Each component has its respective `.jsx` file (React component) and `.css` file (styling).
+Contributing
+-Feel free to open issues and submit pull requests.
 
----
 
-📂 Pages (`src/pages/`)
-Each folder represents a page in the app.
-
-1. Cart (`Cart/`) → Shopping cart page.
-2. Home (`Home/) → Homepage of the food delivery app.
-3. PlaceOrder (`PlaceOrder/`) → Checkout page for placing an order.
-
-Each page has a `.jsx` file (React component) and a `.css` file for styling.
