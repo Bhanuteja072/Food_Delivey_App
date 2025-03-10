@@ -15,7 +15,7 @@ import menu_8 from './menu_8.png'
 
 import food_1 from './Grreek.jpg'
 
-import food_2 from './vegSalad.jpg'
+import food_2 from './VegSalad.jpg'
 
 
 import food_3 from './coversalad.jpg'
