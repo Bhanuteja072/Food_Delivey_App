@@ -12,7 +12,7 @@
 
 // const placeOrder = async (req, res) => {
 
-//     const frontend_url = "http://localhost:5173";
+//     const frontend_url = "https://food-delivey-frontend.onrender.com";
 
 
 
