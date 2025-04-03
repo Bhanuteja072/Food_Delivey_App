@@ -1,90 +1,118 @@
-Food Delivery App
+# Food Delivery App
 
-This is a full-stack food delivery application built with React, Node.js, Express, and MongoDB.
+This is a full-stack Food Delivery Web Application that allows users to browse food items, place orders, and manage their cart. It features an **admin panel** for managing food listings and orders.
 
-Features
-- User authentication (login/register)
-- Browse food items and categories
-- Add items to the cart
-- Place orders
-- Admin panel for managing orders and food items
-- Responsive design for mobile and desktop
+## 🌍 Live Demo
 
-Project Structure
-├── admin/         # Admin dashboard for managing the app
-├── backend/       # Backend server (Node.js, Express, MongoDB)
-├── frontend/      # User-facing frontend (React, Vite)
-Admin Panel
-- Built with React and Vite
-- Manages food items, orders, and users
+You can access the deployed version here: **https://food-delivey-frontend.onrender.com**
 
-Backend
-- Built with Node.js, Express, and MongoDB
-- Implements authentication and order management
-- API routes for users, orders, food items, and cart
+## 🏗️ Project Structure
 
- Frontend
-- Built with React and Vite
-- User authentication and order placement
-- Cart functionality and real-time updates
+```
+└── bhanuteja072-food_delivey_app/
+    ├── README.md
+    ├── admin/
+    │   ├── README.md
+    │   ├── eslint.config.js
+    │   ├── index.html
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   ├── vite.config.js
+    │   ├── public/
+    │   └── src/
+    │       ├── App.jsx
+    │       ├── index.css
+    │       ├── main.jsx
+    │       ├── assets/
+    │       │   └── assets.js
+    │       ├── components/
+    │       │   ├── Navbar/
+    │       │   │   ├── Navbar.css
+    │       │   │   └── Navbar.jsx
+    │       │   └── Sidebar/
+    │       │       ├── Sidebar.css
+    │       │       └── Sidebar.jsx
+    │       └── pages/
+    │           ├── Add/
+    │           │   ├── Add.css
+    │           │   └── Add.jsx
+    │           ├── List/
+    │           │   ├── List.css
+    │           │   └── List.jsx
+    │           └── Orders/
+    │               ├── Orders.css
+    │               └── Orders.jsx
+    ├── backend/
+    │   ├── package-lock.json
+    │   ├── package.json
+    │   ├── server.js
+    │   ├── config/
+    │   │   └── db.js
+    │   ├── controllers/
+    │   ├── middleware/
+    │   ├── models/
+    │   ├── routes/
+    │   └── uploads/
+    └── frontend/
+        ├── README.md
+        ├── eslint.config.js
+        ├── index.html
+        ├── package-lock.json
+        ├── package.json
+        ├── vite.config.js
+        ├── .gitignore
+        ├── public/
+        └── src/
+            ├── App.css
+            ├── App.jsx
+            ├── index.css
+            ├── main.jsx
+            ├── components/
+            ├── Context/
+            └── pages/
+```
 
-Installation
+## 🚀 Features
+- **User Dashboard**: Browse food items, add to cart, and place orders.
+- **Admin Panel**: Manage food listings and order tracking.
+- **Secure Authentication**: User login/signup.
+- **Responsive UI**: Optimized for mobile and desktop.
 
-  Preequisites
-    -Make sure you have Node.js and MongoDB installed on your system.
+## 🛠️ Technologies Used
+- **Backend**: Node.js, Express.js, MongoDB
+- **Frontend**: React.js, Vite, Tailwind CSS
+- **Authentication**: JWT-based authentication
+- **Database**: MongoDB Atlas
 
-Clone the repository
-git clone https://github.com/your-username/bhanuteja072-food_delivery_app.git
-cd bhanuteja072-food_delivery_app
+## 🔧 Setup Instructions
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/YOUR_GITHUB_USERNAME/food_delivery_app.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd bhanuteja072-food_delivey_app
+   ```
+3. Install dependencies for backend and frontend:
+   ```sh
+   cd backend && npm install
+   cd ../frontend && npm install
+   ```
+4. Set up your `.env` file with required environment variables.
+5. Run the backend:
+   ```sh
+   cd backend && npm start
+   ```
+6. Run the frontend:
+   ```sh
+   cd frontend && npm run dev
+   ```
+7. Open the browser and go to `http://localhost:5173`
 
+## 📜 License
+This project is licensed under the MIT License.
 
-Install dependencies
-Backend
+---
 
--cd backend
--npm install
-
-
-Frontend
-
--cd ../frontend
--npm install
-
-Admin Panel
--cd ../admin
-npm install
-
-
-Running the Application
--Start Backend Server
---cd backend
---npm run server
-
-Start Frontend
--cd frontend
--npm run dev
-
-Start Admin Panel
--cd admin
--npm run dev
-
-
-Environment Variables
-Create a `.env` file in the `backend/` folder and configure the following:
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-STRIPE_SECRET_KEY
-PORT=5000
-
-API Endpoints
-| Endpoint          | Method | Description              |
-|------------------|--------|--------------------------|
-| `/api/users`      | GET    | Get all users            |
-| `/api/foods`      | GET    | Get all food items       |
-| `/api/cart`       | POST   | Add to cart              |
-| `/api/orders`     | POST   | Place an order           |
-
-Contributing
--Feel free to open issues and submit pull requests.
-
+🔗 **Connect with Me:** [https://github.com/Bhanuteja072]
 
